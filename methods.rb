@@ -18,22 +18,12 @@ students = [
  ["Terminator", :november]
 ]
 
-def print_header
-puts "The students of Villains Academy"
-puts "-------------"
-end
-def print(names)
-  names.each do |name|
-  puts name
-end
-end
-
-def print_footer(names)
-puts "Overall, we have #{names.count} great students"
+def print(students)
+  students.each do |student|
+    puts "#{student[0]} (#{student[1]} cohort)"
+  end
 end
 
 #nothing happens until we call the method
 
-print_header
 print(students)
-print_footer(students)
